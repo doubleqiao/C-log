@@ -6,3 +6,6 @@ For example:
 /* "*/"/
 will actually be
 "/
+
+
+2.The "i" in the for loop is only valid inside the for loop.
