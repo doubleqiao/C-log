@@ -10,4 +10,4 @@ will actually be
 
 2.The "i" in the “for” loop is only valid inside the for loop.
 
-3. Sometimes the compilation failed and there is no errors in the source file, maybe it is because some symbols are under the Chinese input state. -_-||
+3.Sometimes the compilation failed and there is no errors in the source file, maybe it is because some symbols are under the Chinese input state. -_-||
