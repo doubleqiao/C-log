@@ -11,4 +11,4 @@ will actually be
 
 - 3.Sometimes the compilation failed and there is no errors in the source file, maybe it is because some symbols are under the Chinese input state. -_-||
 
--4.Small mistakes matter! Pay attention to the sequence of the input arguments of the function.
+- 4.Small mistakes matter! Pay attention to the sequence of the input arguments of the function.
