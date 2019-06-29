@@ -31,3 +31,5 @@ will actually be
 - 6.When using gtest to test the results, catkin_make only generates the excutable and library targets, while catkin_make run_tests will generate the gtest target. Then the gtest target can be implemented similar as the "node" using rosrun.
 
 - 7.When using multiple workspace, overlay could solve the problme of the connection between different workspaces. However, it is recommended to use only one workspace. (Still there is one problem)
+
+- 8.alglib::real_1d_array needs some initial values before assignment?
