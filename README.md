@@ -28,4 +28,4 @@ will actually be
   
   or something like that, probably because the dependency of package "alglib" is not included in the package.xml. 
   
-- 6. When using gtest to test the results, catkin_make only generates the excutable and library targets, while catkin_make run_tests will generate the gtest target. Thne the gtest target can be implemented similar as the "node" using rosrun.
+- 6.When using gtest to test the results, catkin_make only generates the excutable and library targets, while catkin_make run_tests will generate the gtest target. Thne the gtest target can be implemented similar as the "node" using rosrun.
