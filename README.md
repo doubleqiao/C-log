@@ -33,3 +33,15 @@ will actually be
 - 7.When using multiple workspace, overlay could solve the problme of the connection between different workspaces. However, it is recommended to use only one workspace. (Still there is one problem)
 
 - 8.alglib::real_1d_array needs some initial values before assignment?
+
+- 9.Error about Eigen:
+
+/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘Eigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator[](Eigen::Index) [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = double; Eigen::Index = long int]’:
+main.cpp:37:21:   required from here
+/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:119:9: error: ‘THE_BRACKET_OPERATOR_IS_ONLY_FOR_VECTORS__USE_THE_PARENTHESIS_OPERATOR_INSTEAD’ is not a member of ‘Eigen::internal::static_assertion<false>’
+         if (Eigen::internal::static_assertion<static_cast<bool>(CONDITION)>::MS
+         ^
+/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:394:7: note: in expansion of macro ‘EIGEN_STATIC_ASSERT’
+       EIGEN_STATIC_ASSERT(Derived::IsVectorAtCompileTime.
+  
+  Such error is because using the BRACKET for the Eigen matrix. So using parenthesis instead.
