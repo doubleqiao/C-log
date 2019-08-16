@@ -45,3 +45,4 @@ main.cpp:37:21:   required from here
        EIGEN_STATIC_ASSERT(Derived::IsVectorAtCompileTime.
   
   Such error is because using the BRACKET for the Eigen matrix. So using parenthesis instead.
+- 10. When using std::vector<> and its corresponding function "push_back", do not forget to "clear" the vector when it is necessary.
