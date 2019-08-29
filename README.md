@@ -50,3 +50,5 @@ main.cpp:37:21:   required from here
   Wrong practice "crobot_element, crobot -> EKF"
   Right practice "crobot_element -> crobot", "crobot -> EKF"
   Check the dependency tree.
+  
+- 12. sensor_msgs::PointCloud needs to be resized before you could properly use them. I guess.
