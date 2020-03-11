@@ -16,7 +16,7 @@ will actually be
 - 5.Using catkin to compile, if there is an error like 
 "CMake Error at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
   Could not find a package configuration file provided by "alglib" with any
-  of the following names:
+  of the followings:
 
     alglibConfig.cmake
     alglib-config.cmake
@@ -26,11 +26,11 @@ will actually be
   provides a separate development package or SDK, be sure it has been
   installed."
   
-  or something like that, probably because the dependency of package "alglib" is not included in the package.xml. 
+  or something like that, probably because the dependency of package "alglib" is not included in the package.xml. Or the package/library alglib is not installed so it can not be found.
   
 - 6.When using gtest to test the results, catkin_make only generates the excutable and library targets, while catkin_make run_tests will generate the gtest target. Then the gtest target can be implemented similar as the "node" using rosrun.
 
-- 7.When using multiple workspace, overlay could solve the problme of the connection between different workspaces. However, it is recommended to use only one workspace. (Still there is one problem)
+- 7.When using multiple workspace, overlay could solve the problem of the connection between different workspaces. However, it is recommended to use only one workspace. (Still there is one problem)
 
 - 8. needs some initial values before assignment? use the member function setcontent to initialize the content.
 
@@ -52,3 +52,4 @@ main.cpp:37:21:   required from here
   Check the dependency tree.
   
 - 12. sensor_msgs::PointCloud needs to be resized before you could properly use them. I guess.
+-13. The name of package or the workspace should avoid space, otherwise it may cause error while compiling.
