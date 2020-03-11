@@ -46,9 +46,9 @@ main.cpp:37:21:   required from here
   
   Such error is because using the BRACKET for the Eigen matrix. So using parenthesis instead.
 - 10.When using std::vector<> and its corresponding function "push_back", do not forget to "clear" the vector when it is necessary.
-- 11.Dependency: crobot_element -> crobot -> EKF 
-  Wrong practice "crobot_element, crobot -> EKF"
-  Right practice "crobot_element -> crobot", "crobot -> EKF"
+- 11.Dependency: crobot_element -> crobot -> EKF /
+  Wrong practice "crobot_element, crobot -> EKF"/
+  Right practice "crobot_element -> crobot", "crobot -> EKF"/
   Check the dependency tree.
   
 - 12.sensor_msgs::PointCloud needs to be resized before you could properly use them. I guess.
