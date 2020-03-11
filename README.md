@@ -32,7 +32,7 @@ will actually be
 
 - 7.When using multiple workspace, overlay could solve the problem of the connection between different workspaces. However, it is recommended to use only one workspace. (Still there is one problem)
 
-- 8. needs some initial values before assignment? use the member function setcontent to initialize the content.
+- 8.needs some initial values before assignment? use the member function setcontent to initialize the content.
 
 - 9.Error about Eigen:
 
@@ -51,6 +51,6 @@ main.cpp:37:21:   required from here
   Right practice "crobot_element -> crobot", "crobot -> EKF"
   Check the dependency tree.
   
-- 12. sensor_msgs::PointCloud needs to be resized before you could properly use them. I guess.
+- 12.sensor_msgs::PointCloud needs to be resized before you could properly use them. I guess.
 
-- 13. The name of package or the workspace should avoid space, otherwise it may cause error while compiling.
+- 13.The name of package or the workspace should avoid space, otherwise it may cause error while compiling.
