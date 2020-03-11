@@ -52,4 +52,5 @@ main.cpp:37:21:   required from here
   Check the dependency tree.
   
 - 12. sensor_msgs::PointCloud needs to be resized before you could properly use them. I guess.
+
 -13. The name of package or the workspace should avoid space, otherwise it may cause error while compiling.
